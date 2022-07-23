@@ -5,6 +5,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationRequest;
@@ -43,13 +44,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final int DEFAULT_ZOOM = 15;
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
     private int PROXIMITY_RADIUS = 10000;
+    private Button recycledButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        recycledButton = findViewById(R.id.recycled_button);
+        recycledButton.setOnClickListener(l -> {
+            startActivity(new Intent(this, WelcomeScreen.class));
+        });
 
         Places.initialize(getApplicationContext(), "AIzaSyD7wfnTuuhphs6F5t2nJhL8Z00_iryINGM");
 
