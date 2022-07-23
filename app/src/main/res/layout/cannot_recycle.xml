@@ -2,65 +2,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/canRecycle"
+    android:id="@+id/cannotRecycle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CEF09D">
 
-    <!-- Yes check -->
+    <!-- no x -->
     <View
-        android:id="@+id/yes_check"
+        android:id="@+id/no_x"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="95dp"
         android:layout_marginTop="227dp"
-        android:background="@drawable/yes_check" />
+        android:background="@drawable/no_circle" />
 
-    <!-- This item is recyclable! -->
+    <!-- This item is NOT recyclable -->
+
+
+    <!-- Recycle another item -->
+
+    <!--rectangle 8-->
+
     <TextView
-        android:id="@+id/is_recyclable"
+        android:id="@+id/this_item_i"
         android:layout_width="304dp"
-        android:layout_height="62dp"
+        android:layout_height="100dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="102dp"
+        android:layout_marginTop="86dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="This item is recyclable!"
-        android:textAppearance="@style/is_recyclable"
-        android:textSize="32sp" />
+        android:text="This item is NOT recyclable"
+        android:textAppearance="@style/is_not_recyclable" />
 
-    <!--Find a center-->
     <TextView
-        android:id="@+id/find_a_cent"
+        android:id="@+id/recycle_ano"
         android:layout_width="260dp"
         android:layout_height="47dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="66dp"
-        android:layout_marginTop="501dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="522dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="Find a center near you"
-        android:textAppearance="@style/find_a_cent" />
+        android:text="Recycle another item"
+        android:textAppearance="@style/recycle_ano"
+        android:textSize="32sp" />
 
-    <!--rectangle 7-->
     <View
-        android:id="@+id/rectangle_7"
+        android:id="@+id/rectangle_8"
         android:layout_width="155dp"
         android:layout_height="52dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="119dp"
-        android:layout_marginTop="607dp"
-        android:background="@drawable/rectangle_7" />
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="609dp"
+        android:background="@drawable/rectangle_8" />
 
-    <!--maps button-->
+
+    <!--return button-->
     <Button
-        android:id="@+id/maps_button"
+        android:id="@+id/return_button"
         android:layout_width="155dp"
         android:layout_height="52dp"
         android:layout_alignParentLeft="true"
@@ -69,19 +74,19 @@
         android:layout_marginTop="606dp"
         android:background="#00000000" />
 
-    <!--maps-->
+    <!--Return-->
     <TextView
-        android:id="@+id/maps"
+        android:id="@+id/return_name"
         android:layout_width="153dp"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="609dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="611dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="Maps"
-        android:textAppearance="@style/maps"
+        android:text="Return"
+        android:textAppearance="@style/return_name"
         android:textSize="32sp" />
 
 
