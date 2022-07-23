@@ -91,6 +91,19 @@
 
     </style>
 
+    <style name="check_box_1">
+
+        <item name="android:textSize">
+            32sp
+        </item>
+
+        <item name="android:textColor">
+            #3F3F3F
+        </item>
+
+    </style>
+
+
 
 
 </resources>

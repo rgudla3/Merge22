@@ -2,67 +2,916 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/welcomeScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CEF09D"
-    tools:context=".Checklist">
+    android:background="#CEF09D">
 
 
-    <View
-        android:id="@+id/checklist_2"
-        android:layout_width="360dp"
-        android:layout_height="644dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/checklist_bg" />
+<ScrollView android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/pick_item_t"
-        android:layout_width="314dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="162dp"
-        android:fontFamily="@font/patrick"
-        android:gravity="center_horizontal|top"
-        android:text="Select an item to recycle:"
-        android:textAppearance="@style/pick_item_t" />
 
-    <View
-        android:id="@+id/hellogreeting"
-        android:layout_width="211dp"
-        android:layout_height="59dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="46dp"
-        android:background="#00000000" />
 
-    <View
-        android:id="@+id/rectangle_4"
-        android:layout_width="211dp"
-        android:layout_height="59dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="46dp"
-        android:background="@drawable/rectangle_4" />
+    <RelativeLayout
+        android:id="@+id/checklistScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center"
+        android:background="#CEF09D"
+        tools:context=".Checklist">
 
-    <TextView
-        android:id="@+id/hello_greeting"
-        android:layout_width="179dp"
-        android:layout_height="43dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="171dp"
-        android:layout_marginTop="54dp"
-        android:fontFamily="@font/patrick"
-        android:gravity="center_horizontal|top"
-        android:text="Hello"
-        android:textAppearance="@style/hello_usern" />
+        <View
+            android:id="@+id/checklist_2"
+            android:layout_width="match_parent"
+            android:layout_height="705dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/checklist_bg" />
+
+        <View
+            android:id="@+id/hellogreeti"
+            android:layout_width="211dp"
+            android:layout_height="59dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="46dp"
+            android:background="#00000000" />
+
+        <View
+            android:id="@+id/rectangle_4"
+            android:layout_width="211dp"
+            android:layout_height="59dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/rectangle_4" />
+
+        <TextView
+            android:id="@+id/hello_usern"
+            android:layout_width="179dp"
+            android:layout_height="43dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="162dp"
+            android:layout_marginTop="54dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="Hello"
+            android:textAppearance="@style/hello_usern" />
+
+        <TextView
+            android:id="@+id/pick_item_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="164dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="Select an item to recycle:"
+            android:textAppearance="@style/pick_item_t" />
+
+        <Button
+                android:id="@+id/plasticBottle"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="234dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="233dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="238dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="252dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Plastic Bottle"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/fbCan"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="341dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="340dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="345dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="86dp"
+                android:layout_marginTop="357dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Food &amp; Drink Can"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/fbCarton"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="442dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="441dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="446dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="459dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Food/Drink Carton"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/paper"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="547dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="73dp"
+                android:layout_marginTop="546dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="551dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="562dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Paper"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/CBorPB"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="644dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="643dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="648dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="656dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Cardboard"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/glass"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="742dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="741dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="746dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="87dp"
+                android:layout_marginTop="758dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Glass"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/plasticBag"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="842dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="841dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="846dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="87dp"
+                android:layout_marginTop="860dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Plastic Bag"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/plasticFilmWrap"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="937dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="936dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="941dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="953dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Plastic Wrap/Film"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/flexPack"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="1034dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="78dp"
+                android:layout_marginTop="1033dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="1038dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="78dp"
+                android:layout_marginTop="1115dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Examples: bag of chips and pouches of soup or milk"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="89dp"
+                android:layout_marginTop="1046dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Flexible Packaging"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/tangler"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="1147dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="1146dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="1151dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="1163dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Tangler Objects"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="81dp"
+                android:layout_marginTop="1221dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Examples: garden hose, rope, or leashes"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/diaper"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="1250dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="1249dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="1254dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="87dp"
+                android:layout_marginTop="1265dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Diapers/menstrual products"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/plasticWax"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="1339dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="1338dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="1343dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="86dp"
+                android:layout_marginTop="1355dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Plastic/Wax Coated Cups"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/polyFoam"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="1428dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="73dp"
+                android:layout_marginTop="1427dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="1432dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="1501dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Examples: packaging peanuts, “to-go” containers"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="84dp"
+                android:layout_marginTop="1447dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Polystyrene Foam/Plastic"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/food"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="1535dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="73dp"
+                android:layout_marginTop="1534dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="1539dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="1554dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Food"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/medicalItem"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="1628dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="1628dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="1633dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="84dp"
+                android:layout_marginTop="1704dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Examples: needle or syringes"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="86dp"
+                android:layout_marginTop="1643dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Medical Item"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/metalWaste"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginTop="1733dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="79dp"
+                android:layout_marginTop="1732dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="1737dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="86dp"
+                android:layout_marginTop="1750dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Metal Waste"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="82dp"
+                android:layout_marginTop="1806dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Examples: car parts, propane cylinders, lawn mowers, and microwaves"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/electronics"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginTop="1847dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="79dp"
+                android:layout_marginTop="1846dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="1851dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="1865dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Electronics"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="82dp"
+                android:layout_marginTop="1921dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Examples: TVs, laptops, cellphones"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/batteries"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="59dp"
+                android:layout_marginTop="1953dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="79dp"
+                android:layout_marginTop="1952dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="1957dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="1970dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Batteries"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/clothing"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="2035dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="2034dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="2039dp"
+                android:background="@drawable/small_white_rect" />
+
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="81dp"
+                android:layout_marginTop="2052dp"
+                android:fontFamily="@font/patrick"
+                android:gravity="center_horizontal|top"
+                android:text="Clothing"
+                android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
