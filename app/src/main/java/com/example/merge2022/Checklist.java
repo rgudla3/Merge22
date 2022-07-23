@@ -9,8 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Checklist extends AppCompatActivity {
 
-    private Button recycleButton;
-
     private TextView tester;
 
     public void onCreate(Bundle savedInstanceState) {
@@ -18,7 +16,7 @@ public class Checklist extends AppCompatActivity {
         setContentView(R.layout.checklist_init);
         Intent i = getIntent();
         String name = i.getStringExtra("name");
-        tester = findViewById(R.id.hello_greeting);
+        tester = findViewById(R.id.hello_usern);
         tester.setText("Hello, " + name + "!");
     }
 }

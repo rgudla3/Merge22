@@ -91,6 +91,7 @@
 
     </style>
 
+    <style name="check_box_1">
     <style name= "is_recyclable">
 
         <item name="android:textSize">
