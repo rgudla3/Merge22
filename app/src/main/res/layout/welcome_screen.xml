@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEF09D"
+    tools:context=".WelcomeScreen">
+
+    <!-- Background -->
+
+
+    <!-- drawable/background.xml -->
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="631dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="-2dp"
+        android:background="@drawable/welcome_tree"></View>
+
+    <!-- Recycle Button -->
+
+    <!-- Recycle -->
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="193dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="top"
+        android:text="APP NAME"
+        android:textAppearance="@style/app_name"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/recycle_but"
+        android:layout_width="172.5dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="559dp"
+        android:background="#00000000" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="172.5dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="559dp"
+        android:background="@drawable/rectangle_1" />
+
+    <TextView
+        android:id="@+id/recycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="159dp"
+        android:layout_marginTop="559dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="top"
+        android:text="Recycle"
+        android:textAppearance="@style/recycle"
+        android:textSize="32sp" />
+
+</RelativeLayout>
