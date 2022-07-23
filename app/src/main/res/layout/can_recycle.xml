@@ -8,54 +8,85 @@
     android:background="#CEF09D">
 
     <!-- Yes check -->
+
+    <!-- Is recyclable! -->
+
+    <!-- Find a center near you -->
+
+    <!-- Rectangle 7 -->
     <View
         android:id="@+id/yes_check"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="107dp"
-        android:layout_marginTop="209dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="227dp"
         android:background="@drawable/yes_check" />
 
-    <!-- Is recyclable! -->
+    <!-- Maps button -->
+
+    <!-- Maps -->
     <TextView
         android:id="@+id/is_recyclable"
         android:layout_width="304dp"
         android:layout_height="62dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="97dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="102dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
         android:text="This item is recyclable!"
         android:textAppearance="@style/is_recyclable"
-        android:textSize="32sp"/>
+        android:textSize="32sp" />
 
-    <!-- Find a center near you -->
     <TextView
         android:id="@+id/find_a_cent"
         android:layout_width="260dp"
         android:layout_height="47dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="76dp"
-        android:layout_marginTop="507dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="501dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
         android:text="Find a center near you"
         android:textAppearance="@style/find_a_cent" />
 
-    <!-- Maps button -->
     <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="607dp"
+        android:background="@drawable/rectangle_7" />
+
+    <Button
         android:id="@+id/maps_button"
         android:layout_width="155dp"
         android:layout_height="52dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="129dp"
-        android:layout_marginTop="605dp"
-        android:background="@drawable/maps_button" />
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="606dp"
+        android:background="#00000000" />
+
+    <TextView
+        android:id="@+id/maps"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="609dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="Maps"
+        android:textAppearance="@style/maps"
+        android:textSize="32sp" />
+
 
 </RelativeLayout>
