@@ -41,7 +41,7 @@
 
     <!-- Rectangle 13 -->
     <View
-        android:id="@+id/rectangle_1"
+        android:id="@+id/rectangle_13"
         android:layout_width="197dp"
         android:layout_height="58dp"
         android:layout_alignParentLeft="true"
