@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEF09D"
+    tools:context=".Login">
+
+
+    <View
+        android:id="@+id/bottom_pot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="97dp"
+        android:background="@drawable/bottom_pot_login" />
+
+    <View
+        android:id="@+id/top_pot"
+        android:layout_width="333dp"
+        android:layout_height="282dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/top_pot_upper" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="Login"
+        android:textAppearance="@style/login"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="374dp"
+        android:background="#00000000" />
+
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/rectangle_3" />
+
+    <TextView
+        android:id="@+id/continueNext"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="380dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="Continue"
+        android:textAppearance="@style/continueNext" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="301dp"
+        android:background="@drawable/rectangle_2" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="304dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center"
+        android:text="Username"
+        android:textColor="#3F3F3F"
+        android:textSize="36sp" />
+
+
+</RelativeLayout>

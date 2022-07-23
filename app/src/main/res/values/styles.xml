@@ -31,5 +31,41 @@
 
     </style>
 
+    <style name="login">
+
+        <item name="android:textSize">
+            36sp
+        </item>
+
+        <item name="android:textColor">
+            #3F3F3F
+        </item>
+
+    </style>
+
+    <style name="continueNext">
+
+        <item name="android:textSize">
+            32sp
+        </item>
+
+        <item name="android:textColor">
+            #3F3F3F
+        </item>
+
+    </style>
+
+    <style name="username">
+
+        <item name="android:textSize">
+            32sp
+        </item>
+
+        <item name="android:textColor">
+            #3F3F3F
+        </item>
+
+    </style>
+
 
 </resources>

@@ -1,0 +1,13 @@
+<TextView android:id="@+id/tester"
+    android:layout_width="93dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="161dp"
+    android:layout_marginTop="156dp"
+    android:fontFamily="@font/patrick"
+    android:gravity="center_horizontal|top"
+    android:text="Login"
+    android:textAppearance="@style/login"
+    android:textSize="40sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
