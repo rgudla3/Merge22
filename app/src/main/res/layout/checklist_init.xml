@@ -870,45 +870,58 @@
                 android:text="Batteries"
                 android:textSize="22sp" />
 
-            <Button
-                android:id="@+id/clothing"
-                android:layout_width="305dp"
-                android:layout_height="68dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="2035dp"
-                android:background="#00000000" />
+        <Button
+            android:id="@+id/clothing"
+            android:layout_width="305dp"
+            android:layout_height="68dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2048dp"
+            android:background="#00000000" />
 
-            <View
-                android:layout_width="275dp"
-                android:layout_height="68dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="2034dp"
-                android:background="@drawable/rectangle_4" />
+        <View
+            android:layout_width="275dp"
+            android:layout_height="68dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="2047dp"
+            android:background="@drawable/rectangle_4" />
 
-            <View
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="51dp"
-                android:layout_marginTop="2039dp"
-                android:background="@drawable/small_white_rect" />
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="2052dp"
+            android:background="@drawable/small_white_rect" />
 
-            <TextView
-                android:layout_width="275dp"
-                android:layout_height="55dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="81dp"
-                android:layout_marginTop="2052dp"
-                android:fontFamily="@font/patrick"
-                android:gravity="center_horizontal|top"
-                android:text="Clothing"
-                android:textSize="22sp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="2065dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="Clothing"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="2112dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="    "
+            android:textSize="22sp" />
 
     </RelativeLayout>
 
