@@ -33,4 +33,29 @@
         android:textAppearance="@style/is_recyclable"
         android:textSize="32sp"/>
 
+    <!-- Find a center near you -->
+    <TextView
+        android:id="@+id/find_a_cent"
+        android:layout_width="260dp"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="507dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="Find a center near you"
+        android:textAppearance="@style/find_a_cent" />
+
+    <!-- Maps button -->
+    <View
+        android:id="@+id/maps_button"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="129dp"
+        android:layout_marginTop="605dp"
+        android:background="@drawable/maps_button" />
+
 </RelativeLayout>
