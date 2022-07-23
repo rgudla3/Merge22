@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEF09D"
+    tools:context=".Checklist">
+
+
+    <View
+        android:id="@+id/checklist_2"
+        android:layout_width="360dp"
+        android:layout_height="644dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/checklist_bg" />
+
+    <TextView
+        android:id="@+id/pick_item_t"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="162dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="Select an item to recycle:"
+        android:textAppearance="@style/pick_item_t" />
+
+    <View
+        android:id="@+id/hellogreeting"
+        android:layout_width="211dp"
+        android:layout_height="59dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="46dp"
+        android:background="#00000000" />
+
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="211dp"
+        android:layout_height="59dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/rectangle_4" />
+
+    <TextView
+        android:id="@+id/hello_greeting"
+        android:layout_width="179dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="171dp"
+        android:layout_marginTop="54dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="Hello"
+        android:textAppearance="@style/hello_usern" />
+
+</RelativeLayout>
