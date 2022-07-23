@@ -91,6 +91,18 @@
 
     </style>
 
+    <style name= "is_recyclable">
+
+        <item name="android:textSize">
+            32sp
+        </item>
+
+        <item name="android:textColor">
+            #3F3F3F
+        </item>
+
+    </style>
+
 
 
 </resources>
