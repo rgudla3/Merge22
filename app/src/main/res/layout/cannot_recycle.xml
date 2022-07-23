@@ -8,15 +8,6 @@
     android:background="#CEF09D">
 
     <!-- no x -->
-    <View
-        android:id="@+id/no_x"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="95dp"
-        android:layout_marginTop="227dp"
-        android:background="@drawable/no_circle" />
 
     <!-- This item is NOT recyclable -->
 
@@ -25,18 +16,66 @@
 
     <!--rectangle 8-->
 
+    <View
+        android:id="@+id/no_x"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/no_circle" />
+
     <TextView
         android:id="@+id/this_item_i"
         android:layout_width="304dp"
         android:layout_height="100dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="44dp"
+        android:layout_marginLeft="54dp"
         android:layout_marginTop="86dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
         android:text="This item is NOT recyclable"
         android:textAppearance="@style/is_not_recyclable" />
+
+    <Button
+        android:id="@+id/learnWhy"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="217dp"
+        android:layout_marginTop="605dp"
+        android:background="#00000000" />
+
+    <View
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="607dp"
+        android:background="@drawable/rectangle_8" />
+
+    <TextView
+        android:id="@+id/learnWhy_name"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="217dp"
+        android:layout_marginTop="610dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="Learn Why"
+        android:textAppearance="@style/return_name"
+        android:textSize="32sp" />
+
+
+    <!--return button-->
+
+    <!--Return-->
 
     <TextView
         android:id="@+id/recycle_ano"
@@ -44,13 +83,23 @@
         android:layout_height="47dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="522dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="539dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
         android:text="Recycle another item"
         android:textAppearance="@style/recycle_ano"
         android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="603dp"
+        android:background="#00000000" />
 
     <View
         android:id="@+id/rectangle_8"
@@ -58,31 +107,18 @@
         android:layout_height="52dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="116dp"
-        android:layout_marginTop="609dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="606dp"
         android:background="@drawable/rectangle_8" />
 
-
-    <!--return button-->
-    <Button
-        android:id="@+id/return_button"
-        android:layout_width="155dp"
-        android:layout_height="52dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="119dp"
-        android:layout_marginTop="606dp"
-        android:background="#00000000" />
-
-    <!--Return-->
     <TextView
         android:id="@+id/return_name"
         android:layout_width="153dp"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="114dp"
-        android:layout_marginTop="611dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="608dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
         android:text="Return"

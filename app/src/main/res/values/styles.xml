@@ -91,6 +91,7 @@
 
     </style>
 
+
     <style name= "is_recyclable">
 
         <item name="android:textSize">
@@ -174,10 +175,6 @@
         </item>
 
     </style>
-
-
-
-
 
 
 
