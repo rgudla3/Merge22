@@ -32,7 +32,6 @@ import com.google.android.libraries.places.api.net.PlacesClient;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private ActivityMapsBinding binding;
     private LocationRequest locationRequest;
     public double latitude;
     public double longitude;
@@ -49,11 +48,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMapsBinding.inflate(getLayoutInflater());
+        ActivityMapsBinding binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         recycledButton = findViewById(R.id.recycled_button);
         recycledButton.setOnClickListener(l -> {
-            startActivity(new Intent(this, WelcomeScreen.class));
+            startActivity(new Intent(this, PointIncrement.class));
         });
 
         Places.initialize(getApplicationContext(), "AIzaSyD7wfnTuuhphs6F5t2nJhL8Z00_iryINGM");
