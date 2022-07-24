@@ -1,4 +1,4 @@
-# Merge 2022
+# Merge 2022: Hubcycle
 
 Everyone knows the three Rs: Reduce, Reuse, and Recycle. However, this famous catch phrase begs some of its own questions: What can I recycle? And where can I recycle it? 
 
