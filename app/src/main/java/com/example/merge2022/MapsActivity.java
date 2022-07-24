@@ -185,7 +185,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                         new LatLng(lastKnownLocation.getLatitude(),
                                                 lastKnownLocation.getLongitude()), DEFAULT_ZOOM));
                                 mMap.addMarker(new MarkerOptions().position(currentLocation).
-                                        title("Marker in Sydney"));
+                                        title("Current Location"));
                             }
                         } else {
                             Log.d(TAG, "Current location is null. Using defaults.");
