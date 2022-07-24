@@ -40,16 +40,17 @@
 
     <TextView
         android:id="@+id/plasticBottleHeader"
-        android:layout_width="179dp"
+        android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="170dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="Plastic bottle"
-        android:textAppearance="@style/hello_usern" />
+        android:text="Food &amp; Beverage Can"
+        android:textAppearance="@style/hello_usern"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/answerQuestions"
@@ -84,16 +85,16 @@
         android:background="@drawable/rectangle_4" />
 
     <TextView
-        android:layout_width="275dp"
-        android:layout_height="55dp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="83dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="284dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="Is your bottle empty?"
-        android:textSize="22sp" />
+        android:text="Is your can made of tin, aluminum, or steel?"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/noButton1"
@@ -308,7 +309,7 @@
         android:layout_marginTop="460dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="Do you have a cap?"
+        android:text="Do you have a plastic lid?"
         android:textSize="22sp" />
 
     <View
