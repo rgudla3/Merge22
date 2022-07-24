@@ -24,10 +24,10 @@ public class CardboardScreen extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cardboard);
-        yes1 = findViewById(R.id.yesButton1);
-        no1 = findViewById(R.id.noButton1);
+        yes1 = findViewById(R.id.foodWasteYesButton);
+        no1 = findViewById(R.id.frostedNoButton);
         yes2 = findViewById(R.id.yesButton);
-        no2 = findViewById(R.id.noButton2);
+        no2 = findViewById(R.id.decorativeNoButton);
         continueNext = findViewById(R.id.continueArrow);
         continueNext.setOnClickListener(l -> {
             startActivity(new Intent(this, CanRecycle.class));
@@ -35,7 +35,7 @@ public class CardboardScreen extends AppCompatActivity {
         yes1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                yesUnselected1 = findViewById(R.id.yesSelected1);
+                yesUnselected1 = findViewById(R.id.frostedYesSelected);
                 yesUnselected1.setVisibility(View.VISIBLE);
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
 
@@ -53,7 +53,7 @@ public class CardboardScreen extends AppCompatActivity {
         yes2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                yesUnselected2 = findViewById(R.id.yesSelected2);
+                yesUnselected2 = findViewById(R.id.decorativeYesSelected);
                 yesUnselected2.setVisibility(View.VISIBLE);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
@@ -72,7 +72,7 @@ public class CardboardScreen extends AppCompatActivity {
         no1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                noUnselected1 = findViewById(R.id.noSelected1);
+                noUnselected1 = findViewById(R.id.frostedNoSelected);
                 noUnselected1.setVisibility(View.VISIBLE);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
@@ -91,7 +91,7 @@ public class CardboardScreen extends AppCompatActivity {
         no2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                noUnselected2 = findViewById(R.id.noSelected2);
+                noUnselected2 = findViewById(R.id.decorativeNoSelected);
                 noUnselected2.setVisibility(View.VISIBLE);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
