@@ -876,8 +876,8 @@
             android:layout_height="68dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="2048dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="738dp"
             android:background="#00000000" />
 
         <View
@@ -885,8 +885,8 @@
             android:layout_height="68dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="2047dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="737dp"
             android:background="@drawable/rectangle_4" />
 
         <View
@@ -894,8 +894,8 @@
             android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="51dp"
-            android:layout_marginTop="2052dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="742dp"
             android:background="@drawable/small_white_rect" />
 
         <TextView
@@ -904,8 +904,8 @@
             android:layout_height="55dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="81dp"
-            android:layout_marginTop="2065dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="755dp"
             android:fontFamily="@font/patrick"
             android:gravity="center_horizontal|top"
             android:text="Clothing"

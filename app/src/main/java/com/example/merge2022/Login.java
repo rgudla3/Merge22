@@ -11,6 +11,7 @@ public class Login extends AppCompatActivity {
 
     public static String userName = "";
     private Button submitButton;
+    public static int score = 0;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
