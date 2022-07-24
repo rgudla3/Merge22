@@ -14,6 +14,7 @@ public class Menu extends AppCompatActivity {
     private Button recycleItemButton;
     private Button viewPointsButton;
     private Button exitButton;
+    public static final String EXTRA_MESSAGE = "com.example.menu.MESSAGE";
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,9 @@ public class Menu extends AppCompatActivity {
         });
         viewPointsButton = findViewById(R.id.points_butt);
         viewPointsButton.setOnClickListener(l -> {
+            Intent intent = new Intent(Menu.this, Points.class);
+            String scoreString1 = "" + WelcomeScreen.score;
+            intent.putExtra(EXTRA_MESSAGE, scoreString1);
             startActivity(new Intent(this, Points.class));
         });
         exitButton = findViewById(R.id.exit);
