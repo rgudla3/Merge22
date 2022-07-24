@@ -14,6 +14,8 @@ public class WelcomeScreen extends AppCompatActivity {
     private Button recycleButton;
     public static String userName = "";
 
+    public static int score = 0;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_screen);

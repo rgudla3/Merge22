@@ -20,8 +20,7 @@ public class Points extends AppCompatActivity {
         pointDisplay = findViewById(R.id.pointDisplay);
         home = findViewById(R.id.home_button);
 
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(PointIncrement.EXTRA_MESSAGE);
+        String message = "" + WelcomeScreen.score;
         pointDisplay.setText(message);
         home.setOnClickListener(l -> {
             startActivity(new Intent(this,Menu.class));
