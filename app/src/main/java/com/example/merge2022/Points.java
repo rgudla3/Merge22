@@ -18,7 +18,7 @@ public class Points extends AppCompatActivity {
         setContentView(R.layout.points);
         home = findViewById(R.id.home_button);
         home.setOnClickListener(l -> {
-            startActivity(new Intent(this, WelcomeScreen.class));
+            startActivity(new Intent(this,Menu.class));
         });
     }
 
