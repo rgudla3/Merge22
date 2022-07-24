@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Login extends AppCompatActivity {
 
-    public static String userName = "";
     private Button submitButton;
     public static int score = 0;
 
@@ -19,7 +18,7 @@ public class Login extends AppCompatActivity {
         EditText nameEdit = findViewById(R.id.username);
         submitButton = findViewById(R.id.login_button);
         submitButton.setOnClickListener(l -> {
-            userName = String.valueOf(nameEdit.getText());
+            WelcomeScreen.userName = String.valueOf(nameEdit.getText());
             startActivity(new Intent(this, Menu.class));
         });
     };

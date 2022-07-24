@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class WelcomeScreen extends AppCompatActivity {
 
     private Button recycleButton;
+    public static String userName = "";
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

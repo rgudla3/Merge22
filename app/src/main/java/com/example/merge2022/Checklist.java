@@ -36,7 +36,7 @@ public class Checklist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.checklist_init);
         tester = findViewById(R.id.hello_usern);
-        tester.setText("Hello, " + Login.userName + "!");
+        tester.setText("Hello, " + WelcomeScreen.userName + "!");
         // link all buttons
 
         plasticBottle = findViewById(R.id.plasticBottle);
