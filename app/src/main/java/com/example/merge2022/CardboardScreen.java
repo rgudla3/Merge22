@@ -79,7 +79,7 @@ public class CardboardScreen extends AppCompatActivity {
 
                 builder.setCancelable(true);
                 builder.setTitle("Your cardboard is not flat.");
-                builder.setMessage("Ypu may proceed. Please flatten it before recycling.");
+                builder.setMessage("You may proceed. Please flatten it before recycling.");
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -97,7 +97,7 @@ public class CardboardScreen extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
 
                 builder.setCancelable(true);
-                builder.setTitle("Your carboard is not an empty box");
+                builder.setTitle("Your cardboard is not an empty box");
                 builder.setMessage("You may proceed. Please empty and make sure it’s not too greasy before recycling.");
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {

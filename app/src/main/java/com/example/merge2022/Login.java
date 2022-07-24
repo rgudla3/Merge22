@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Login extends AppCompatActivity {
 
+    public static String userName = "";
     private Button submitButton;
+    public static int score = 0;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,11 +19,8 @@ public class Login extends AppCompatActivity {
         EditText nameEdit = findViewById(R.id.username);
         submitButton = findViewById(R.id.login_button);
         submitButton.setOnClickListener(l -> {
-            String name = String.valueOf(nameEdit.getText());
-            Bundle bundle = new Bundle();
-            bundle.putString("name", name);
+            userName = String.valueOf(nameEdit.getText());
             Intent i = new Intent(this, Checklist.class);
-            i.putExtras(bundle);
             startActivity(i);
             finish();
         });

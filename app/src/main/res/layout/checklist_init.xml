@@ -146,19 +146,19 @@
                 android:layout_marginTop="345dp"
                 android:background="@drawable/small_white_rect" />
 
-            <TextView
-                android:layout_width="275dp"
-                android:layout_height="55dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="86dp"
-                android:layout_marginTop="357dp"
-                android:fontFamily="@font/patrick"
-                android:gravity="center_horizontal|top"
-                android:text="Food &amp; Drink Can"
-                android:textSize="22sp" />
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="358dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="Food &amp; Drink Can"
+            android:textSize="22sp" />
 
-            <Button
+        <Button
                 android:id="@+id/fbCarton"
                 android:layout_width="305dp"
                 android:layout_height="68dp"
@@ -186,17 +186,17 @@
                 android:layout_marginTop="446dp"
                 android:background="@drawable/small_white_rect" />
 
-            <TextView
-                android:layout_width="275dp"
-                android:layout_height="55dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="85dp"
-                android:layout_marginTop="459dp"
-                android:fontFamily="@font/patrick"
-                android:gravity="center_horizontal|top"
-                android:text="Food/Drink Carton"
-                android:textSize="22sp" />
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="459dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="Food/Drink Carton"
+            android:textSize="22sp" />
 
             <Button
                 android:id="@+id/paper"
@@ -226,17 +226,17 @@
                 android:layout_marginTop="551dp"
                 android:background="@drawable/small_white_rect" />
 
-            <TextView
-                android:layout_width="275dp"
-                android:layout_height="55dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="83dp"
-                android:layout_marginTop="562dp"
-                android:fontFamily="@font/patrick"
-                android:gravity="center_horizontal|top"
-                android:text="Paper"
-                android:textSize="22sp" />
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="83dp"
+            android:layout_marginTop="562dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="Paper"
+            android:textSize="22sp" />
 
             <Button
                 android:id="@+id/CBorPB"
@@ -266,19 +266,59 @@
                 android:layout_marginTop="648dp"
                 android:background="@drawable/small_white_rect" />
 
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="664dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="Cardboard"
+            android:textSize="22sp" />
+
+        <Button
+                android:id="@+id/glass"
+                android:layout_width="305dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="742dp"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="275dp"
+                android:layout_height="68dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="741dp"
+                android:background="@drawable/rectangle_4" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="746dp"
+                android:background="@drawable/small_white_rect" />
+
             <TextView
                 android:layout_width="275dp"
                 android:layout_height="55dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="85dp"
-                android:layout_marginTop="656dp"
+                android:layout_marginLeft="87dp"
+                android:layout_marginTop="758dp"
                 android:fontFamily="@font/patrick"
                 android:gravity="center_horizontal|top"
-                android:text="Cardboard"
+                android:text="Glass"
                 android:textSize="22sp" />
 
-        <Button
+            <Button
                 android:id="@+id/plasticBag"
                 android:layout_width="305dp"
                 android:layout_height="68dp"
@@ -398,19 +438,19 @@
                 android:text="Examples: bag of chips and pouches of soup or milk"
                 android:textSize="12sp" />
 
-            <TextView
-                android:layout_width="275dp"
-                android:layout_height="55dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="89dp"
-                android:layout_marginTop="1046dp"
-                android:fontFamily="@font/patrick"
-                android:gravity="center_horizontal|top"
-                android:text="Flexible Packaging"
-                android:textSize="22sp" />
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="89dp"
+            android:layout_marginTop="1050dp"
+            android:fontFamily="@font/patrick"
+            android:gravity="center_horizontal|top"
+            android:text="Flexible Packaging"
+            android:textSize="22sp" />
 
-            <Button
+        <Button
                 android:id="@+id/tangler"
                 android:layout_width="305dp"
                 android:layout_height="68dp"

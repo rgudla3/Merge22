@@ -35,10 +35,8 @@ public class Checklist extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.checklist_init);
-        Intent i = getIntent();
-        String name = i.getStringExtra("name");
         tester = findViewById(R.id.hello_usern);
-        tester.setText("Hello, " + name + "!");
+        tester.setText("Hello, " + Login.userName + "!");
         // link all buttons
 
         plasticBottle = findViewById(R.id.plasticBottle);
