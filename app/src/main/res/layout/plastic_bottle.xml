@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:background="#CEF09D">
 
+
+    <!-- test -->
     <View
         android:id="@+id/plasticBottleTree"
         android:layout_width="match_parent"
