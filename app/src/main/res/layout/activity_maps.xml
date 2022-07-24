@@ -1,26 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<FrameLayout xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CEF09D"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+
+    <!-- map pot-->
+    <View
+        android:id="@+id/login_1"
+        android:layout_width="87dp"
+        android:layout_height="89dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/map_pot" />
+
+    <!-- Rectangle 9 -->
+    <View
+        android:id="@+id/rectangle_9"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_9"
+        />
+
+    <Button
+        android:id="@+id/recycled_button"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="690dp"
+        android:background="#00000000" />
+
+    <!-- Rectangle 13 -->
+    <View
+        android:id="@+id/rectangle_13"
+        android:layout_width="197dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="690dp"
+        android:background="@drawable/recycled_button"
+        />
+
+    <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="380dp"
+        android:layout_height="530dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
         tools:context=".MapsActivity" />
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/btnRecycle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nearby Recycling centers" />
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="Nearby Centers"
+            android:fontFamily="@font/patrick"
+            android:textColor="#3F3F3F"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"/>
     </LinearLayout>
+
+    <!-- Rectangle 14 -->
+    <View
+        android:id="@+id/rectangle_14"
+        android:layout_width="395dp"
+        android:layout_height="540dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="117dp"
+        android:background="@drawable/rectangle_14" />
+
+
 </FrameLayout>
