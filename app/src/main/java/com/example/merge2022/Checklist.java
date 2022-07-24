@@ -17,7 +17,6 @@ public class Checklist extends AppCompatActivity {
     private Button fbCarton;
     private Button paper;
     private Button cardboard;
-    private Button glass;
     private Button plasticBag;
     private Button plasticWrap;
     private Button flexPack;
@@ -45,7 +44,6 @@ public class Checklist extends AppCompatActivity {
         fbCarton = findViewById(R.id.fbCarton);
         paper = findViewById(R.id.paper);
         cardboard = findViewById(R.id.CBorPB);
-        glass = findViewById(R.id.glass);
         plasticBag = findViewById(R.id.plasticBag);
         plasticWrap = findViewById(R.id.plasticFilmWrap);
         flexPack = findViewById(R.id.flexPack);
@@ -73,6 +71,7 @@ public class Checklist extends AppCompatActivity {
         directToCannotRecycle(electronics);
         directToCannotRecycle(batteries);
         directToCannotRecycle(clothing);
+        directToCannotRecycle(polyFoam);
 
 
         plasticBottle.setOnClickListener(l -> {

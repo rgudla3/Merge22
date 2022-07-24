@@ -20,9 +20,7 @@ public class Login extends AppCompatActivity {
         submitButton = findViewById(R.id.login_button);
         submitButton.setOnClickListener(l -> {
             userName = String.valueOf(nameEdit.getText());
-            Intent i = new Intent(this, Checklist.class);
-            startActivity(i);
-            finish();
+            startActivity(new Intent(this, Menu.class));
         });
     };
 }

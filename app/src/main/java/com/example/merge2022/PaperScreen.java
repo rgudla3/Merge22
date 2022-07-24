@@ -24,8 +24,8 @@ public class PaperScreen extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.paper);
-        yes1 = findViewById(R.id.yesButton1);
-        no1 = findViewById(R.id.noButton1);
+        yes1 = findViewById(R.id.foodWasteYesButton);
+        no1 = findViewById(R.id.frostedNoButton);
         continueNext = findViewById(R.id.continueArrow);
         continueNext.setOnClickListener(l -> {
             startActivity(new Intent(this, CanRecycle.class));
@@ -34,7 +34,7 @@ public class PaperScreen extends AppCompatActivity {
         yes1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                yesUnselected1 = findViewById(R.id.yesSelected1);
+                yesUnselected1 = findViewById(R.id.frostedYesSelected);
                 yesUnselected1.setVisibility(View.VISIBLE);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(PaperScreen.this);
@@ -56,7 +56,7 @@ public class PaperScreen extends AppCompatActivity {
         no1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                noUnselected1 = findViewById(R.id.noSelected1);
+                noUnselected1 = findViewById(R.id.frostedNoSelected);
                 noUnselected1.setVisibility(View.VISIBLE);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(PaperScreen.this);

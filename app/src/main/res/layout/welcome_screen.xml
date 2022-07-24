@@ -35,13 +35,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="137dp"
-        android:layout_marginTop="195dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="138dp"
         android:fontFamily="@font/patrick"
         android:gravity="top"
-        android:text="APP NAME"
+        android:text="HUBCYClE"
         android:textAppearance="@style/app_name"
-        android:textSize="36sp" />
+        android:textSize="52sp" />
 
     <Button
         android:id="@+id/recycle_but"
