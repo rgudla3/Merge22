@@ -23,7 +23,7 @@ public class CardboardScreen extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plastic_bottle);
+        setContentView(R.layout.cardboard);
         yes1 = findViewById(R.id.yesButton1);
         no1 = findViewById(R.id.noButton1);
         yes2 = findViewById(R.id.yesButton);
@@ -40,8 +40,8 @@ public class CardboardScreen extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
 
                 builder.setCancelable(true);
-                builder.setTitle("Your bottle is empty!");
-                builder.setMessage("You may proceed. In the future, be sure to dump out the contents before recycling.");
+                builder.setTitle("Your cardboard is flat?");
+                builder.setMessage("You may proceed!");
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -59,8 +59,8 @@ public class CardboardScreen extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
 
                 builder.setCancelable(true);
-                builder.setTitle("You have your bottle cap!");
-                builder.setMessage("Please put the bottle cap back on the empty container.");
+                builder.setTitle("It is empty.");
+                builder.setMessage("Please proceed!");
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -78,8 +78,8 @@ public class CardboardScreen extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
 
                 builder.setCancelable(true);
-                builder.setTitle("Your bottle is not empty!");
-                builder.setMessage("Please make sure to dump out the contents before recycling.");
+                builder.setTitle("Your cardboard is not flat.");
+                builder.setMessage("Ypu may proceed. Please flatten it before recycling.");
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -97,8 +97,8 @@ public class CardboardScreen extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardboardScreen.this);
 
                 builder.setCancelable(true);
-                builder.setTitle("You don't have your bottle cap!");
-                builder.setMessage("You may proceed. In the future, be sure to screw on the cap of your bottle before recycling.");
+                builder.setTitle("Your carboard is not an empty box");
+                builder.setMessage("You may proceed. Please empty and make sure it’s not too greasy before recycling.");
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
