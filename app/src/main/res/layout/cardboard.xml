@@ -48,7 +48,7 @@
         android:layout_marginTop="96dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="Plastic bottle"
+        android:text="Cardboard"
         android:textAppearance="@style/hello_usern" />
 
     <TextView
@@ -92,8 +92,8 @@
         android:layout_marginTop="296dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="Is your bottle empty?"
-        android:textSize="22sp" />
+        android:text="Is your cardboard/paperboard flat?"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/noButton1"
@@ -300,16 +300,16 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="275dp"
-        android:layout_height="55dp"
+        android:layout_width="207dp"
+        android:layout_height="78dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="453dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
-        android:text="Do you have a cap?"
-        android:textSize="22sp" />
+        android:text="Is your cardboard an empty pizza box?"
+        android:textSize="18sp" />
 
     <View
         android:layout_width="60dp"

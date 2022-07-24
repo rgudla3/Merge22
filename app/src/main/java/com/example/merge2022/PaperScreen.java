@@ -23,48 +23,32 @@ public class PaperScreen extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plastic_bottle);
+        setContentView(R.layout.paper);
         yes1 = findViewById(R.id.yesButton1);
         no1 = findViewById(R.id.noButton1);
-        yes2 = findViewById(R.id.yesButton);
-        no2 = findViewById(R.id.noButton2);
         continueNext = findViewById(R.id.continueArrow);
         continueNext.setOnClickListener(l -> {
             startActivity(new Intent(this, CanRecycle.class));
         });
+
         yes1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 yesUnselected1 = findViewById(R.id.yesSelected1);
                 yesUnselected1.setVisibility(View.VISIBLE);
-                AlertDialog.Builder builder = new AlertDialog.Builder(PaperScreen.this);
-
-                builder.setCancelable(true);
-                builder.setTitle("Your bottle is empty!");
-                builder.setMessage("You may proceed. In the future, be sure to dump out the contents before recycling.");
-
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) { }
-                });
-                builder.show();
-            }
-        });
-        yes2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                yesUnselected2 = findViewById(R.id.yesSelected2);
-                yesUnselected2.setVisibility(View.VISIBLE);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(PaperScreen.this);
 
                 builder.setCancelable(true);
-                builder.setTitle("You have your bottle cap!");
-                builder.setMessage("Please put the bottle cap back on the empty container.");
+                builder.setTitle("Your paper is soiled or wet.");
+                builder.setMessage("Please dispose of paper in trash.");
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) { }
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(PaperScreen.this, CannotRecycle.class);
+                        startActivity(intent);
+                    }
                 });
                 builder.show();
             }
@@ -78,8 +62,8 @@ public class PaperScreen extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(PaperScreen.this);
 
                 builder.setCancelable(true);
-                builder.setTitle("Your bottle is not empty!");
-                builder.setMessage("Please make sure to dump out the contents before recycling.");
+                builder.setTitle("Your paper is not soiled or wet.");
+                builder.setMessage("You may proceed!");
 
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -88,25 +72,7 @@ public class PaperScreen extends AppCompatActivity {
                 builder.show();
             }
         });
-        no2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                noUnselected2 = findViewById(R.id.noSelected2);
-                noUnselected2.setVisibility(View.VISIBLE);
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(PaperScreen.this);
-
-                builder.setCancelable(true);
-                builder.setTitle("You don't have your bottle cap!");
-                builder.setMessage("You may proceed. In the future, be sure to screw on the cap of your bottle before recycling.");
-
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) { }
-                });
-                builder.show();
-            }
-        });
     }
 
 }
