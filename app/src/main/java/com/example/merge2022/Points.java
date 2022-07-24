@@ -24,7 +24,7 @@ public class Points extends AppCompatActivity {
         String message = intent.getStringExtra(PointIncrement.EXTRA_MESSAGE);
         pointDisplay.setText(message);
         home.setOnClickListener(l -> {
-            startActivity(new Intent(this, WelcomeScreen.class));
+            startActivity(new Intent(this,Menu.class));
         });
     }
 

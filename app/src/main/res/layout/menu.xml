@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEF09D"
+    tools:context=".Menu">
+
+    <!--little tree 2-->
+    <View
+        android:id="@+id/little_tree2"
+        android:layout_width="122dp"
+        android:layout_height="162dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/little_tree" />
+
+    <!--little tree 1-->
+    <View
+        android:id="@+id/little_tree1"
+        android:layout_width="122dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/little_tree" />
+
+    <!--menu-->
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="77dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="114dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="MENU"
+        android:textAppearance="@style/menu"
+        android:textSize="36sp" />
+
+    <!--Recycle Item-->
+    <Button
+        android:id="@+id/checklist_button"
+        android:layout_width="279dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="275dp"
+        android:background="#00000000" />
+
+    <!--rectangle 5-->
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="275dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="275dp"
+        android:background="@drawable/rectangle_5" />
+
+    <!--Recycle Item text-->
+    <TextView
+        android:id="@+id/recycle_ite"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="288dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="Recycle Item"
+        android:textAppearance="@style/recycle_ite" />
+
+    <!--rectangle 5.2-->
+    <View
+        android:id="@+id/rectangle_5.2"
+        android:layout_width="275dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/rectangle_5" />
+
+    <!--view points text-->
+    <TextView
+        android:id="@+id/view_points"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="433dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="View Points"
+        android:textAppearance="@style/view_points" />
+
+    <!--exit button-->
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="279dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="565dp"
+        android:background="#00000000" />
+
+    <!--rectangle 5.3-->
+    <View
+        android:id="@+id/rectangle_5.3"
+        android:layout_width="275dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="565dp"
+        android:background="@drawable/rectangle_53" />
+
+    <!--exit text-->
+    <TextView
+        android:id="@+id/exit_text"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="578dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="LOG OUT"
+        android:textAppearance="@style/exit_text" />
+
+    <!-- points button menu -->
+    <Button
+        android:id="@+id/points_butt"
+        android:layout_width="279dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="420dp"
+        android:background="#00000000" />
+
+
+
+</RelativeLayout>
