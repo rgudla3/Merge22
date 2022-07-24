@@ -77,6 +77,10 @@ public class Checklist extends AppCompatActivity {
         directToCannotRecycle(clothing);
 
 
+        plasticBottle.setOnClickListener(l -> {
+            startActivity(new Intent(this, PlasticBottleScreen.class));
+        });
+
     }
 
     public void directToCannotRecycle(Button button) {
