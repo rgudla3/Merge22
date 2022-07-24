@@ -29,7 +29,7 @@
         android:background="#00000000" />
 
     <View
-        android:id="@+id/rectangle_4"
+        android:id="@+id/plasticBottleRectangleWhite"
         android:layout_width="211dp"
         android:layout_height="59dp"
         android:layout_alignParentLeft="true"
@@ -65,7 +65,7 @@
         android:textAppearance="@style/pick_item_t" />
 
     <View
-        android:id="@+id/rectangle_10"
+        android:id="@+id/yesUnselected2"
         android:layout_width="143dp"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
@@ -106,7 +106,7 @@
         android:background="#00000000" />
 
     <View
-        android:id="@+id/rectangle_9"
+        android:id="@+id/noUnselected1"
         android:layout_width="142dp"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
@@ -114,20 +114,6 @@
         android:layout_marginLeft="209dp"
         android:layout_marginTop="368dp"
         android:background="@drawable/rectangle_8" />
-
-    <TextView
-        android:id="@+id/optionNo1"
-        android:layout_width="153dp"
-        android:layout_height="48dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="205dp"
-        android:layout_marginTop="370dp"
-        android:fontFamily="@font/patrick"
-        android:gravity="center_horizontal|top"
-        android:text="No"
-        android:textAppearance="@style/return_name"
-        android:textSize="32sp" />
 
     <Button
         android:id="@+id/yesButton1"
@@ -140,7 +126,7 @@
         android:background="#00000000" />
 
     <View
-        android:id="@+id/rectangle_8"
+        android:id="@+id/yesUnselected1"
         android:layout_width="143dp"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
@@ -148,6 +134,42 @@
         android:layout_marginLeft="48dp"
         android:layout_marginTop="367dp"
         android:background="@drawable/rectangle_8" />
+
+    <View
+        android:id="@+id/yesSelected1"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="367dp"
+        android:background="@drawable/rectangle_4"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/noSelected1"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="209dp"
+        android:layout_marginTop="365dp"
+        android:background="@drawable/rectangle_4"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/optionNo1"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="366dp"
+        android:fontFamily="@font/patrick"
+        android:gravity="center_horizontal|top"
+        android:text="No"
+        android:textAppearance="@style/return_name"
+        android:textSize="32sp" />
 
     <TextView
         android:id="@+id/optionYes1"
@@ -196,6 +218,17 @@
         android:text="2"
         android:textAppearance="@style/pick_item_t" />
 
+    <View
+        android:id="@+id/yesSelected2"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="531dp"
+        android:background="@drawable/rectangle_4"
+        android:visibility="invisible" />
+
     <TextView
         android:id="@+id/optionYes2"
         android:layout_width="143dp"
@@ -210,34 +243,45 @@
         android:textAppearance="@style/return_name"
         android:textSize="32sp" />
 
+    <View
+        android:id="@+id/noUnselected2"
+        android:layout_width="142dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="211dp"
+        android:layout_marginTop="531dp"
+        android:background="@drawable/rectangle_8" />
+
+    <View
+        android:id="@+id/noSelected2"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/rectangle_4"
+        android:visibility="invisible" />
+
     <Button
         android:id="@+id/noButton2"
         android:layout_width="155dp"
         android:layout_height="52dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="213dp"
-        android:layout_marginTop="528dp"
+        android:layout_marginLeft="218dp"
+        android:layout_marginTop="527dp"
         android:background="#00000000" />
-
-    <View
-        android:id="@+id/rectangle_5"
-        android:layout_width="142dp"
-        android:layout_height="48dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="206dp"
-        android:layout_marginTop="532dp"
-        android:background="@drawable/rectangle_8" />
 
     <TextView
         android:id="@+id/optionNo2"
-        android:layout_width="153dp"
-        android:layout_height="48dp"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="202dp"
-        android:layout_marginTop="534dp"
+        android:layout_marginLeft="207dp"
+        android:layout_marginTop="533dp"
         android:fontFamily="@font/patrick"
         android:gravity="center_horizontal|top"
         android:text="No"
@@ -251,7 +295,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="528dp"
+        android:layout_marginTop="529dp"
         android:background="#00000000" />
 
     <TextView
