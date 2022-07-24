@@ -81,6 +81,18 @@ public class Checklist extends AppCompatActivity {
             startActivity(new Intent(this, PlasticBottleScreen.class));
         });
 
+        paper.setOnClickListener(l -> {
+            startActivity(new Intent(this, PaperScreen.class));
+        });
+
+        fbCan.setOnClickListener(l -> {
+            startActivity(new Intent(this, FoodBeverageCanScreen.class));
+        });
+
+        cardboard.setOnClickListener(l -> {
+            startActivity(new Intent(this, CardboardScreen.class));
+        });
+
     }
 
     public void directToCannotRecycle(Button button) {
